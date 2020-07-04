@@ -127,7 +127,3 @@ def create_test_data():
 
 if __name__ == '__main__':
     create_test_data()
-    # repo_segments = ParseDiffFile('PySolFC_diff.txt').get_segments()
-    # repo_segments = ParseDiffFile('/cs/zbio/hadar/IML2020/tasks/github/data/july_3/PySolFC_diff.txt').get_segments()
-    # print('##############################')
-    # print('repo segments: ', repo_segments[:5])
