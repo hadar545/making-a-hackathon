@@ -12,7 +12,6 @@ def test_task1():
 
 def test_task2(id_num):
     src_mod = __import__('{}.task2.src'.format(id_num), fromlist=['model'])
-    # from model import GitHubClassifier as ghc
 
     segs_path = '/cs/zbio/hadar/IML2020/tasks/github/data/july_3/test_data_full.tsv'
     test_segments = pd.read_csv(segs_path, sep='\t', header=None).values
@@ -37,7 +36,6 @@ def test_submission(task_type, id_num):
 
 def parse():
     parser = argparse.ArgumentParser()
-    # parser.add_argument('submission_path', help='path of unzipped submission folder')
     parser.add_argument('task_type', help='type of task. options are: task1, task2')
     parser.add_argument('id_num', help='type of task. options are: task1, task2')
     return parser.parse_args()
